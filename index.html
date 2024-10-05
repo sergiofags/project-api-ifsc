@@ -11,20 +11,31 @@
 <body>
     
     <div class="container">
-        <form action="" method="get">
-            <div>
-                <label for="cnpj">CNPJ:</label>
-                <input type="text" name="cnpj" id="cnpj" required>
-            </div>
-            <div>
-                <button type="submit">Buscar</button>
-            </div>
-        </form>
-        <div id="resultado">
-
+        <div>
+            <p><strong>CNPJ</strong></p>
+            <form action="" method="get">
+                <div>
+                    <label for="cnpj">CNPJ:</label>
+                    <input type="text" name="cnpj" id="cnpj" required>
+                </div>
+                <div>
+                    <button type="submit">Buscar</button>
+                </div>
+            </form>
+            <div id="resultadoCNPJ"></div>
+        </div>
+        <div>
+            <p><strong>PESSOA</strong></p>
+            <button id="buttonPerson">Nova pessoa</button>
+            <button id="buttonSavePerson">Salvar pessoa</button>
+            <div id="resultadoPerson"></div>
+        </div>
+        <div>
+            <p><strong>EQUIPE</strong></p>
+            <div id="group"></div>
         </div>
     </div>
 
-    <script src="apiCNPJ.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
